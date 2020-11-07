@@ -1,9 +1,8 @@
 //
 //  HamburgerContainerViewController.swift
-//  Speede
+//
 //
 //  Created by Hrishikesh Devhare on 22/09/20.
-//  Copyright © 2020 Hrishikesh Devhare. All rights reserved.
 //
 
 import UIKit
