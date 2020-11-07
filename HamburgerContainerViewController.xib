@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HamburgerContainerViewController" customModule="Speede" customModuleProvider="target">
+            <connections>
+                <outlet property="baseView" destination="ngS-IH-vuL" id="gbA-oK-kre"/>
+                <outlet property="leadingConstraint" destination="Eg4-Gr-1Tf" id="e3R-d1-How"/>
+                <outlet property="menuView" destination="vAR-kH-ap3" id="rla-NE-Gef"/>
+                <outlet property="overlayLeadingConstraint" destination="x6W-S1-nrO" id="sLf-J3-sFf"/>
+                <outlet property="overlayView" destination="7rv-Bf-VSg" id="ZvX-9h-ipv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngS-IH-vuL">
+                    <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1M7-Ne-Plj">
+                    <rect key="frame" x="20" y="64" width="44" height="44"/>
+                    <color key="backgroundColor" name="Crimson"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="PLZ-QP-SU7"/>
+                        <constraint firstAttribute="width" constant="44" id="nBR-5w-IeY"/>
+                    </constraints>
+                    <connections>
+                        <action selector="MenuButtonTapped:" destination="-1" eventType="touchUpInside" id="SpN-Iq-yHe"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7rv-Bf-VSg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAR-kH-ap3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1M7-Ne-Plj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="7am-Jn-zag"/>
+                <constraint firstItem="ngS-IH-vuL" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="B2U-iI-sy7"/>
+                <constraint firstItem="vAR-kH-ap3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eg4-Gr-1Tf"/>
+                <constraint firstItem="7rv-Bf-VSg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="LCB-Zd-ilt"/>
+                <constraint firstItem="7rv-Bf-VSg" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="Lt8-TU-LR0"/>
+                <constraint firstItem="ngS-IH-vuL" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="Rtn-ds-mr3"/>
+                <constraint firstItem="vAR-kH-ap3" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="X3X-Wm-VB8"/>
+                <constraint firstItem="ngS-IH-vuL" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Z67-MI-0lF"/>
+                <constraint firstItem="vAR-kH-ap3" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="cgM-C5-Nhm"/>
+                <constraint firstItem="vAR-kH-ap3" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="jHv-nr-6ME"/>
+                <constraint firstItem="1M7-Ne-Plj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="jWn-6g-3gc"/>
+                <constraint firstItem="7rv-Bf-VSg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="qAp-Fy-E4Z"/>
+                <constraint firstItem="ngS-IH-vuL" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="x4R-Vx-xZm"/>
+                <constraint firstItem="7rv-Bf-VSg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="x6W-S1-nrO"/>
+            </constraints>
+            <point key="canvasLocation" x="-252.17391304347828" y="141.96428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Crimson">
+            <color red="0.54509803921568623" green="0.011764705882352941" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
